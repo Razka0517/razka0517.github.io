@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshots Proyek - Razka Fathir Fahillah</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a56db;
+            --secondary: #f8fafc;
+            --accent: #0ea5e9;
+            --text: #1e293b;
+            --muted: #64748b;
+            --light-blue: #e0f2fe;
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --radius: 12px;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        * { 
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            overflow: hidden;
+        }
+        
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.4rem;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+        }
+        
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 6px;
+            background: var(--light-blue);
+            transition: all 0.2s ease;
+        }
+        
+        .back-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
+        }
+        
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 24px;
+        }
+        
+        .screenshot-item {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+        
+        .screenshot-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent);
+        }
+        
+        .screenshot-item img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        
+        .caption {
+            margin-top: 8px;
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 1rem;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container { 
+                padding: 25px 20px;
+                margin: 20px 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .screenshots {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aplikasi Mobile Mydeperlas</h1>
+            <p class="subtitle">Kumpulan gambar hasil proyek yang telah saya kerjakan.</p>
+            <a href="main.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Kembali ke Portofolio
+            </a>
+        </header>
+
+        <section class="screenshots">
+            <div class="screenshot-item">
+                <img src="/images/login_screen.png" alt="Tampilan Login Aplikasi Mobile">
+                <div class="caption">Tampilan Login</div>
+            </div>
+            <div class="screenshot-item">
+                <img src="/images/beranda.png" alt="Tampilan Beranda Aplikasi">
+                <div class="caption">Tampilan Beranda</div>
+            </div>
+            <div class="screenshot-item">
+                <img src="/images/jadwal.png" alt="Tampilan Jadwal Aplikasi">
+                <div class="caption">Tampilan Jadwal</div>
+            </div>
+            <div class="screenshot-item">
+                <img src="/images/list_absen.png" alt="Tampilan List Rekap Absen">
+                <div class="caption">Tampilan List Rekap Absen</div>
+            </div>
+            <div class="screenshot-item">
+                <img src="/images/rekap_absen.png" alt="Tampilan Rekap Absen">
+                <div class="caption">Tampilan Rekap Absen</div>
+            </div>
+            <div class="screenshot-item">
+                <img src="/images/pertandingan.png" alt="Tampilan Jadwal Pertandingan">
+                <div class="caption">Tampilan Jadwal Pertandingan</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Razka Fathir Fahillah. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
